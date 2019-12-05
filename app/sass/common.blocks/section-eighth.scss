@@ -1,0 +1,48 @@
+.section-eighth {
+  padding-top: 65px;
+  svg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 48px;
+    width: 100%;
+  }
+
+  .h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-eighth {
+    padding-top: 50px;
+
+    svg {
+      margin-top: -90px;
+      margin-bottom: -90px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-eighth__container {
+    position: relative;
+    height: 600px;
+  }
+
+  .section-eighth svg {
+    height: 700px;
+    min-width: 500px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 470px) {
+  .section-eighth svg {
+    height: 600px;
+  }
+}

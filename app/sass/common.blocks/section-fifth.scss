@@ -1,0 +1,304 @@
+.section-fifth {
+  padding-top: 98px;
+  padding-bottom: 70px;
+  .h3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 83px;
+  }
+
+  .section-fifth__border-dottedLine {
+    border-left: 1px dashed #2F2F2F;
+    padding-left: 39px;
+  }
+}
+
+.elements-bottle {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  margin-top: 60px;
+  max-width: 448px;
+}
+
+.elements-bottle__icon {
+  max-width: 41px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+
+  span {
+    display: block;
+  }
+}
+
+.elements__title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #6C6C6C !important;
+  margin-bottom: 23px;
+  display: block;
+}
+
+.elements-bottle__icon:nth-child(1) {
+  span {
+    background: url("../img/bottle-icon-1.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(2) {
+  span {
+    background: url("../img/bottle-icon-2.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(3) {
+  span {
+    background: url("../img/bottle-icon-3.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(4) {
+  span {
+    background: url("../img/bottle-icon-4.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(5) {
+  span {
+    background: url("../img/bottle-icon-5.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(6) {
+  span {
+    background: url("../img/bottle-icon-6.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(7) {
+  span {
+    background: url("../img/bottle-icon-7.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(8) {
+  span {
+    background: url("../img/bottle-icon-8.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(9) {
+  span {
+    background: url("../img/bottle-icon-9.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(10) {
+  span {
+    background: url("../img/bottle-icon-10.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(11) {
+  span {
+    background: url("../img/bottle-icon-11.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(12) {
+  span {
+    background: url("../img/bottle-icon-12.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.elements-bottle__icon:nth-child(13) {
+  span {
+    background: url("../img/bottle-icon-13.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+
+.elements-bottle__icon:nth-child(14) {
+  span {
+    background: url("../img/bottle-icon-14.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .elements img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-fifth {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-fifth .h3 {
+    margin-bottom: 30px;
+  }
+
+  .section-fifth .section-fifth__border-dottedLine {
+    padding-left: 15px;
+    margin-top: 40px;
+  }
+
+  .elements img {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: 100%;
+  }
+
+  .elements-bottle__icon:nth-child(1) {
+    span {
+      width: 31px;
+      height: 31px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(2) {
+    span {
+      width: 32px;
+      height: 31px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(3) {
+    span {
+      width: 26px;
+      height: 25px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(4) {
+    span {
+      width: 31px;
+      height: 31px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(5) {
+    span {
+      width: 32px;
+      height: 31px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(6) {
+    span {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(7) {
+    span {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(8) {
+    span {
+      width: 31px;
+      height: 30px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(9) {
+    span {
+      width: 32px;
+      height: 31px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(10) {
+    span {
+      width: 31px;
+      height: 30px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(11) {
+    span {
+      width: 30px;
+      height: 29px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(12) {
+    span {
+      width: 33px;
+      height: 33px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(13) {
+    span {
+      width: 31px;
+      height: 31px;
+    }
+  }
+
+  .elements-bottle__icon:nth-child(14) {
+    span {
+      width: 31px;
+      height: 29px;
+    }
+  }
+}
+
+@media (max-width: 462px) {
+  .elements-bottle {
+    grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+  }
+}

@@ -1,0 +1,396 @@
+.section-third {
+  .section-third-animation.animated {
+    img {
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    #bottle-center {
+      z-index: 10;
+    }
+
+    #bottle-top-left {
+      animation-name: bottle-top-left;
+    }
+
+    #bottle-top-right {
+      animation-name: bottle-top-right;
+    }
+
+    #bottle-bottom-left {
+      animation-name: bottle-bottom-left;
+    }
+
+    #bottle-bottom-right {
+      animation-name: bottle-bottom-right;
+    }
+
+    #line-date-1986,
+    #line-date-1987,
+    #line-date-0-75,
+    #line-date-1-5 {
+      animation-name: bottle-information-1;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    svg {
+      position: absolute;
+    }
+
+    #line-date-1986 {
+      left: 7%;
+      top: 33%;
+    }
+
+    #line-date-1987 {
+      right: 12.5%;
+      top: 33%;
+    }
+
+    #line-date-0-75 {
+      left: 8%;
+      bottom: 19%;
+    }
+
+    #line-date-1-5 {
+      right: 12.5%;
+      bottom: 19%;
+    }
+
+    #line-date-1986__icon {
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-name: line-date-1986__icon-animation;
+      animation-fill-mode: both;
+    }
+
+    #line-date-1987__icon {
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-name: line-date-1987__icon-animation;
+      animation-fill-mode: both;
+    }
+
+    #line-date-0-75__icon {
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-name: line-date-0-75__icon-animation;
+      animation-fill-mode: both;
+    }
+
+    #line-date-1-5__icon {
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-name: line-date-1-5__icon-animation;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+
+
+
+//////////svg
+
+@keyframes line-date-1986__icon-animation {
+  from {
+    transform: rotate(50deg) translateX(85px) rotate(-50deg);
+    opacity: 0;
+  }
+  to   {
+    transform: rotate(175deg) translateX(85px) rotate(-175deg);
+    opacity: 1;
+  }
+}
+
+@keyframes line-date-1987__icon-animation {
+  from {
+    transform: rotate(-218deg) translateX(85px) rotate(218deg);
+    opacity: 0;
+  }
+  to   {
+    transform: rotate(-355deg) translateX(85px) rotate(355deg);
+    opacity: 1;
+  }
+}
+
+@keyframes line-date-0-75__icon-animation {
+  from {
+    transform: rotate(-50deg) translateX(85px) rotate(50deg);
+    opacity: 0;
+  }
+  to   {
+    transform: rotate(-180deg) translateX(85px) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes line-date-1-5__icon-animation {
+  from {
+    transform: rotate(218deg) translateX(85px) rotate(-218deg);
+    opacity: 0;
+  }
+  to   {
+    transform: rotate(355deg) translateX(85px) rotate(-355deg);
+    opacity: 1;
+  }
+}
+
+
+
+/////////////
+
+@keyframes bottle-information-1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bottle-top-left {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: -74%;
+    top: -400px;
+  }
+}
+
+@keyframes bottle-top-right {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    right: -65%;
+    top: -400px;
+  }
+}
+
+@keyframes bottle-bottom-left {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: -73%;
+    bottom: -620px;
+  }
+}
+
+@keyframes bottle-bottom-right {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    right: -66%;
+    bottom: -650px;
+  }
+}
+
+
+
+////////////
+
+
+#first-circle {
+  -webkit-animation-name: twilioRotation;
+  animation-name: twilioRotation;
+  -webkit-transform-origin: 480px 461px;
+  -ms-transform-origin: 480px 461px;
+  transform-origin: 480px 461px;
+  -webkit-animation-duration: 150s;
+  animation-duration: 150s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+#second-circle {
+  -webkit-animation-name: twilioRotation;
+  animation-name: twilioRotation;
+  -webkit-transform-origin: 480px 461px;
+  -ms-transform-origin: 480px 461px;
+  transform-origin: 480px 461px;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+#third-circle {
+  -webkit-animation-name: twilioRotation;
+  animation-name: twilioRotation;
+  -webkit-transform-origin: 480px 461px;
+  -ms-transform-origin: 480px 461px;
+  transform-origin: 480px 461px;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+#four-circle {
+  -webkit-animation-name: twilioRotation;
+  animation-name: twilioRotation;
+  -webkit-transform-origin: 480px 461px;
+  -ms-transform-origin: 480px 461px;
+  transform-origin: 480px 461px;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  display: none;
+}
+
+
+.first-circle__logo {
+  -webkit-animation-name: twilioRotationMinus;
+  animation-name: twilioRotationMinus;
+  -webkit-animation-duration: 150s;
+  animation-duration: 150s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.second-circle__logo {
+  -webkit-animation-name: twilioRotationMinus;
+  animation-name: twilioRotationMinus;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.third-circle__logo {
+  -webkit-animation-name: twilioRotationMinus;
+  animation-name: twilioRotationMinus;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  position: relative;
+  z-index: 1;
+}
+
+
+#first-circle__html {
+  -webkit-transform-origin: 733px 138px;
+  -ms-transform-origin: 733px 138px;
+  transform-origin: 733px 138px;
+}
+#first-circle__bootstrap {
+  -webkit-transform-origin: 874px 530px;
+  -ms-transform-origin: 874px 530px;
+  transform-origin: 874px 530px;
+}
+#first-circle__css {
+  -webkit-transform-origin: 83px 392px;
+  -ms-transform-origin: 83px 392px;
+  transform-origin: 83px 392px;
+}
+#first-circle__js {
+  -webkit-transform-origin: 300px 83px;
+  -ms-transform-origin: 300px 83px;
+  transform-origin: 300px 83px;
+}
+
+
+#second-circle__msql {
+  -webkit-transform-origin: 295px 680px;
+  -ms-transform-origin: 295px 680px;
+  transform-origin: 295px 680px;
+}
+#second-circle__angular {
+  -webkit-transform-origin: 730px 585px;
+  -ms-transform-origin: 730px 585px;
+  transform-origin: 730px 585px;
+}
+
+#third-circle__blade {
+  -webkit-transform-origin: 616px 369px;
+  -ms-transform-origin: 616px 369px;
+  transform-origin: 616px 369px;
+}
+#third-circle__php {
+  -webkit-transform-origin: 342px 384px;
+  -ms-transform-origin: 342px 384px;
+  transform-origin: 342px 384px;
+}
+#third-circle__apiLaravel {
+  -webkit-transform-origin: 476px 617px;
+  -ms-transform-origin: 476px 617px;
+  transform-origin: 476px 617px;
+}
+
+
+
+@-webkit-keyframes twilioRotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twilioRotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes twilioRotationMinus {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes twilioRotationMinus {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+

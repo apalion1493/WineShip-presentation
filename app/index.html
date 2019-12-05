@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WineShip</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap&subset=cyrillic" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<main class="app" id="app">
+    <section class="section section-first">
+        <div class="container position-relative">
+            <div class="video-bg">
+                <video width="100%" height="auto" preload="auto" autoplay="autoplay" muted loop="loop">
+                    <source src="media/video/videoplayback.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+            <div class="row section-first__header">
+                <div class="col-8 col-md-5">
+                    <div class="logo-container">
+                        <a class="logo-main logo-main_mr" href="https://webdelo.org/"></a>
+                        <a class="logo-whine" href="#"></a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-7">
+                    <div class="main-menu">
+                        <div class="burger" id="burger">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="section-first__content">
+                        <h1 class="section-first__content-title wow fadeInLeft" data-wow-duration="0.8s">Винный магазин <br>
+                            <span>WineShip</span></h1>
+
+                        <p class="section-first__content-text mt-5 wow fadeInLeft" data-wow-delay="0.2s">Стильный и удобный функционал каталога</p>
+                        <p class="section-first__content-text wow fadeInLeft" data-wow-delay="0.2s">60 000 наименований вин и алкоголя</p>
+
+                        <div class="section-first__content-btnGroup wow fadeInLeft" data-wow-delay="0.4s">
+                            <a href="#" class="btn btn-orange mr-0 mr-md-5">Подробнее о проекте</a>
+
+                            <a class="section-link" href="#">Сайт в архиве</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wine-img-mobil"></div>
+    </section>
+    <section class="section section-second">
+        <div class="section-second-bg-1 section-second-bg wow fadeInLeft" data-wow-delay="0.3s"></div>
+        <div class="section-second-bg-2 section-second-bg wow fadeInLeft" data-wow-delay="0.6s"></div>
+        <div class="section-second-bg-3 section-second-bg wow fadeInLeft" data-wow-delay="0.9s"></div>
+        <div class="container position-relative">
+            <div class="section-second-laptop-img wow fadeInLeft" data-wow-delay="1s"></div>
+            <div class="row position-relative zindex-4">
+                <div class="col-md-5 col-12"></div>
+                <div class="col-md-7 col-12">
+                    <div class="section-second__container wow fadeInLeft">
+                        <h2 class="h2">Что мы сделали</h2>
+                        <ul class="section-second__list">
+                            <li class="section-second__item">
+                                <div class="section-second__content">
+                                    <i class="red-arrow red-arrow_mr"></i>
+                                    <p class="main-text">Сочетание экслюзивных свойств разнообразной алкогольной продукции внутри одного каталога</p>
+                                </div>
+                            </li>
+                            <li class="section-second__item">
+                                <div class="section-second__content">
+                                    <i class="red-arrow red-arrow_mr"></i>
+                                    <p class="main-text">Возможность назначать и управлять индивидуальными характеристиками каждой бутылки</p>
+                                </div>
+                            </li>
+                            <li class="section-second__item">
+                                <div class="section-second__content">
+                                    <i class="red-arrow red-arrow_mr"></i>
+                                    <p class="main-text">Продуманная фильтрация поиска товара на основе маркетингового исследования</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-third section-bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="section-third-animation wow">
+                        <img class="bottle-desktop" id="bottle-center" src="img/bottle-center.png" alt="">
+                        <img class="bottle-desktop" id="bottle-top-left" src="img/bottle-top-left.png" alt="">
+                        <img class="bottle-desktop" id="bottle-top-right" src="img/bottle-top-right.png" alt="">
+                        <img class="bottle-desktop" id="bottle-bottom-left" src="img/bottle-bottom-left.png" alt="">
+                        <img class="bottle-desktop" id="bottle-bottom-right" src="img/bottle-bottom-right.png" alt="">
+
+                        <svg class="bottle-desktop" id="line-date-1986" width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35 29.9999V50.9999C35 82.4801 60.5198 108 92 108H136" stroke="white" stroke-opacity="0.4" stroke-dasharray="2 5"/>
+                            <g id="line-date-1986__icon">
+                                <rect x="93.5" y="7.5" width="42" height="42" rx="16.5" fill="black" stroke="#717171"/>
+                                <path d="M105.295 33H104.205V25.7754L102.02 26.5781V25.5938L105.125 24.4277H105.295V33ZM112.625 29.25C112.398 29.5195 112.127 29.7363 111.811 29.9004C111.498 30.0645 111.154 30.1465 110.779 30.1465C110.287 30.1465 109.857 30.0254 109.49 29.7832C109.127 29.541 108.846 29.2012 108.646 28.7637C108.447 28.3223 108.348 27.8359 108.348 27.3047C108.348 26.7344 108.455 26.2207 108.67 25.7637C108.889 25.3066 109.197 24.957 109.596 24.7148C109.994 24.4727 110.459 24.3516 110.99 24.3516C111.834 24.3516 112.498 24.668 112.982 25.3008C113.471 25.9297 113.715 26.7891 113.715 27.8789V28.1953C113.715 29.8555 113.387 31.0684 112.73 31.834C112.074 32.5957 111.084 32.9863 109.76 33.0059H109.549V32.0918H109.777C110.672 32.0762 111.359 31.8438 111.84 31.3945C112.32 30.9414 112.582 30.2266 112.625 29.25ZM110.955 29.25C111.318 29.25 111.652 29.1387 111.957 28.916C112.266 28.6934 112.49 28.418 112.631 28.0898V27.6562C112.631 26.9453 112.477 26.3672 112.168 25.9219C111.859 25.4766 111.469 25.2539 110.996 25.2539C110.52 25.2539 110.137 25.4375 109.848 25.8047C109.559 26.168 109.414 26.6484 109.414 27.2461C109.414 27.8281 109.553 28.3086 109.83 28.6875C110.111 29.0625 110.486 29.25 110.955 29.25ZM120.383 26.6953C120.383 27.1211 120.27 27.5 120.043 27.832C119.82 28.1641 119.518 28.4238 119.135 28.6113C119.58 28.8027 119.932 29.082 120.189 29.4492C120.451 29.8164 120.582 30.2324 120.582 30.6973C120.582 31.4355 120.332 32.0234 119.832 32.4609C119.336 32.8984 118.682 33.1172 117.869 33.1172C117.049 33.1172 116.391 32.8984 115.895 32.4609C115.402 32.0195 115.156 31.4316 115.156 30.6973C115.156 30.2363 115.281 29.8203 115.531 29.4492C115.785 29.0781 116.135 28.7969 116.58 28.6055C116.201 28.418 115.902 28.1582 115.684 27.8262C115.465 27.4941 115.355 27.1172 115.355 26.6953C115.355 25.9766 115.586 25.4062 116.047 24.9844C116.508 24.5625 117.115 24.3516 117.869 24.3516C118.619 24.3516 119.225 24.5625 119.686 24.9844C120.15 25.4062 120.383 25.9766 120.383 26.6953ZM119.498 30.6738C119.498 30.1973 119.346 29.8086 119.041 29.5078C118.74 29.207 118.346 29.0566 117.857 29.0566C117.369 29.0566 116.977 29.2051 116.68 29.502C116.387 29.7988 116.24 30.1895 116.24 30.6738C116.24 31.1582 116.383 31.5391 116.668 31.8164C116.957 32.0938 117.357 32.2324 117.869 32.2324C118.377 32.2324 118.775 32.0938 119.064 31.8164C119.354 31.5352 119.498 31.1543 119.498 30.6738ZM117.869 25.2422C117.443 25.2422 117.098 25.375 116.832 25.6406C116.57 25.9023 116.439 26.2598 116.439 26.7129C116.439 27.1465 116.568 27.498 116.826 27.7676C117.088 28.0332 117.436 28.166 117.869 28.166C118.303 28.166 118.648 28.0332 118.906 27.7676C119.168 27.498 119.299 27.1465 119.299 26.7129C119.299 26.2793 119.164 25.9258 118.895 25.6523C118.625 25.3789 118.283 25.2422 117.869 25.2422ZM126.201 24.4629V25.3828H126.002C125.158 25.3984 124.486 25.6484 123.986 26.1328C123.486 26.6172 123.197 27.2988 123.119 28.1777C123.568 27.6621 124.182 27.4043 124.959 27.4043C125.701 27.4043 126.293 27.666 126.734 28.1895C127.18 28.7129 127.402 29.3887 127.402 30.2168C127.402 31.0957 127.162 31.7988 126.682 32.3262C126.205 32.8535 125.564 33.1172 124.76 33.1172C123.943 33.1172 123.281 32.8047 122.773 32.1797C122.266 31.5508 122.012 30.7422 122.012 29.7539V29.3379C122.012 27.7676 122.346 26.5684 123.014 25.7402C123.686 24.9082 124.684 24.4824 126.008 24.4629H126.201ZM124.777 28.3066C124.406 28.3066 124.064 28.418 123.752 28.6406C123.439 28.8633 123.223 29.1426 123.102 29.4785V29.877C123.102 30.5801 123.26 31.1465 123.576 31.5762C123.893 32.0059 124.287 32.2207 124.76 32.2207C125.248 32.2207 125.631 32.041 125.908 31.6816C126.189 31.3223 126.33 30.8516 126.33 30.2695C126.33 29.6836 126.188 29.2109 125.902 28.8516C125.621 28.4883 125.246 28.3066 124.777 28.3066Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <svg class="bottle-desktop" id="line-date-1987" width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M117 29.9999V50.9999C117 82.4801 91.4802 108 60 108H16" stroke="white" stroke-opacity="0.4" stroke-dasharray="2 5"/>
+                            <g id="line-date-1987__icon">
+                                <rect x="16.5" y="7.5" width="42" height="42" rx="16.5" fill="black" stroke="#717171"/>
+                                <path d="M28.2949 33H27.2051V25.7754L25.0195 26.5781V25.5938L28.125 24.4277H28.2949V33ZM35.625 29.25C35.3984 29.5195 35.127 29.7363 34.8105 29.9004C34.498 30.0645 34.1543 30.1465 33.7793 30.1465C33.2871 30.1465 32.8574 30.0254 32.4902 29.7832C32.127 29.541 31.8457 29.2012 31.6465 28.7637C31.4473 28.3223 31.3477 27.8359 31.3477 27.3047C31.3477 26.7344 31.4551 26.2207 31.6699 25.7637C31.8887 25.3066 32.1973 24.957 32.5957 24.7148C32.9941 24.4727 33.459 24.3516 33.9902 24.3516C34.834 24.3516 35.498 24.668 35.9824 25.3008C36.4707 25.9297 36.7148 26.7891 36.7148 27.8789V28.1953C36.7148 29.8555 36.3867 31.0684 35.7305 31.834C35.0742 32.5957 34.084 32.9863 32.7598 33.0059H32.5488V32.0918H32.7773C33.6719 32.0762 34.3594 31.8438 34.8398 31.3945C35.3203 30.9414 35.582 30.2266 35.625 29.25ZM33.9551 29.25C34.3184 29.25 34.6523 29.1387 34.957 28.916C35.2656 28.6934 35.4902 28.418 35.6309 28.0898V27.6562C35.6309 26.9453 35.4766 26.3672 35.168 25.9219C34.8594 25.4766 34.4688 25.2539 33.9961 25.2539C33.5195 25.2539 33.1367 25.4375 32.8477 25.8047C32.5586 26.168 32.4141 26.6484 32.4141 27.2461C32.4141 27.8281 32.5527 28.3086 32.8301 28.6875C33.1113 29.0625 33.4863 29.25 33.9551 29.25ZM43.3828 26.6953C43.3828 27.1211 43.2695 27.5 43.043 27.832C42.8203 28.1641 42.5176 28.4238 42.1348 28.6113C42.5801 28.8027 42.9316 29.082 43.1895 29.4492C43.4512 29.8164 43.582 30.2324 43.582 30.6973C43.582 31.4355 43.332 32.0234 42.832 32.4609C42.3359 32.8984 41.6816 33.1172 40.8691 33.1172C40.0488 33.1172 39.3906 32.8984 38.8945 32.4609C38.4023 32.0195 38.1562 31.4316 38.1562 30.6973C38.1562 30.2363 38.2812 29.8203 38.5312 29.4492C38.7852 29.0781 39.1348 28.7969 39.5801 28.6055C39.2012 28.418 38.9023 28.1582 38.6836 27.8262C38.4648 27.4941 38.3555 27.1172 38.3555 26.6953C38.3555 25.9766 38.5859 25.4062 39.0469 24.9844C39.5078 24.5625 40.1152 24.3516 40.8691 24.3516C41.6191 24.3516 42.2246 24.5625 42.6855 24.9844C43.1504 25.4062 43.3828 25.9766 43.3828 26.6953ZM42.498 30.6738C42.498 30.1973 42.3457 29.8086 42.041 29.5078C41.7402 29.207 41.3457 29.0566 40.8574 29.0566C40.3691 29.0566 39.9766 29.2051 39.6797 29.502C39.3867 29.7988 39.2402 30.1895 39.2402 30.6738C39.2402 31.1582 39.3828 31.5391 39.668 31.8164C39.957 32.0938 40.3574 32.2324 40.8691 32.2324C41.377 32.2324 41.7754 32.0938 42.0645 31.8164C42.3535 31.5352 42.498 31.1543 42.498 30.6738ZM40.8691 25.2422C40.4434 25.2422 40.0977 25.375 39.832 25.6406C39.5703 25.9023 39.4395 26.2598 39.4395 26.7129C39.4395 27.1465 39.5684 27.498 39.8262 27.7676C40.0879 28.0332 40.4355 28.166 40.8691 28.166C41.3027 28.166 41.6484 28.0332 41.9062 27.7676C42.168 27.498 42.2988 27.1465 42.2988 26.7129C42.2988 26.2793 42.1641 25.9258 41.8945 25.6523C41.625 25.3789 41.2832 25.2422 40.8691 25.2422ZM50.4551 25.0781L46.9219 33H45.7852L49.3066 25.3594H44.6895V24.4688H50.4551V25.0781Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <svg class="bottle-desktop" id="line-date-0-75" width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35 105.573V81C35 49.5198 60.5198 24 92 24H132.259" stroke="white" stroke-opacity="0.4" stroke-dasharray="2 5"/>
+                            <g id="line-date-0-75__icon">
+                                <rect x="93.5" y="82.5" width="42" height="44" rx="16.5" fill="black" stroke="#717171"/>
+                                <path d="M107.201 104.209C107.201 105.478 106.984 106.422 106.551 107.039C106.117 107.656 105.439 107.964 104.518 107.964C103.607 107.964 102.934 107.664 102.496 107.062C102.059 106.457 101.832 105.554 101.816 104.355V102.908C101.816 101.654 102.033 100.722 102.467 100.113C102.9 99.5035 103.58 99.1989 104.506 99.1989C105.424 99.1989 106.1 99.4938 106.533 100.084C106.967 100.67 107.189 101.576 107.201 102.802V104.209ZM106.117 102.726C106.117 101.808 105.988 101.14 105.73 100.722C105.473 100.3 105.064 100.089 104.506 100.089C103.951 100.089 103.547 100.298 103.293 100.716C103.039 101.134 102.908 101.777 102.9 102.644V104.379C102.9 105.3 103.033 105.982 103.299 106.423C103.568 106.861 103.975 107.08 104.518 107.08C105.053 107.08 105.449 106.873 105.707 106.459C105.969 106.045 106.105 105.392 106.117 104.502V102.726ZM108.725 107.279C108.725 107.091 108.779 106.935 108.889 106.81C109.002 106.685 109.17 106.623 109.393 106.623C109.615 106.623 109.783 106.685 109.896 106.81C110.014 106.935 110.072 107.091 110.072 107.279C110.072 107.459 110.014 107.609 109.896 107.73C109.783 107.851 109.615 107.912 109.393 107.912C109.17 107.912 109.002 107.851 108.889 107.73C108.779 107.609 108.725 107.459 108.725 107.279ZM117.262 99.9254L113.729 107.847H112.592L116.113 100.207H111.496V99.316H117.262V99.9254ZM118.99 103.57L119.424 99.316H123.795V100.318H120.344L120.086 102.644C120.504 102.398 120.979 102.275 121.51 102.275C122.287 102.275 122.904 102.533 123.361 103.048C123.818 103.56 124.047 104.254 124.047 105.129C124.047 106.007 123.809 106.701 123.332 107.209C122.859 107.713 122.197 107.964 121.346 107.964C120.592 107.964 119.977 107.755 119.5 107.338C119.023 106.92 118.752 106.341 118.686 105.603H119.711C119.777 106.091 119.951 106.461 120.232 106.711C120.514 106.957 120.885 107.08 121.346 107.08C121.85 107.08 122.244 106.908 122.529 106.564C122.818 106.22 122.963 105.746 122.963 105.14C122.963 104.57 122.807 104.113 122.494 103.769C122.186 103.422 121.773 103.248 121.258 103.248C120.785 103.248 120.414 103.351 120.145 103.558L119.857 103.793L118.99 103.57Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <svg class="bottle-desktop" id="line-date-1-5" width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M117.652 106V85C117.652 53.5198 92.1318 28 60.6516 28H16" stroke="white" stroke-opacity="0.4" stroke-dasharray="2 5"/>
+                            <g id="line-date-1-5__icon">
+                                <rect x="16.5" y="86.5" width="42.2774" height="42" rx="16.5" fill="black" stroke="#717171"/>
+                                <path d="M33.5899 112H32.5V104.775L30.3145 105.578V104.594L33.42 103.428H33.5899V112ZM36.9004 111.432C36.9004 111.244 36.9551 111.088 37.0645 110.963C37.1778 110.838 37.3457 110.775 37.5684 110.775C37.7911 110.775 37.959 110.838 38.0723 110.963C38.1895 111.088 38.2481 111.244 38.2481 111.432C38.2481 111.611 38.1895 111.762 38.0723 111.883C37.959 112.004 37.7911 112.064 37.5684 112.064C37.3457 112.064 37.1778 112.004 37.0645 111.883C36.9551 111.762 36.9004 111.611 36.9004 111.432ZM40.4278 107.723L40.8614 103.469H45.2325V104.471H41.7813L41.5235 106.797C41.9414 106.551 42.4161 106.428 42.9473 106.428C43.7246 106.428 44.3418 106.686 44.7989 107.201C45.2559 107.713 45.4844 108.406 45.4844 109.281C45.4844 110.16 45.2461 110.854 44.7696 111.361C44.2969 111.865 43.6348 112.117 42.7832 112.117C42.0293 112.117 41.4141 111.908 40.9375 111.49C40.461 111.072 40.1895 110.494 40.1231 109.756H41.1485C41.2149 110.244 41.3887 110.613 41.67 110.863C41.9512 111.109 42.3223 111.232 42.7832 111.232C43.2871 111.232 43.6817 111.061 43.9668 110.717C44.2559 110.373 44.4004 109.898 44.4004 109.293C44.4004 108.723 44.2442 108.266 43.9317 107.922C43.6231 107.574 43.211 107.4 42.6953 107.4C42.2227 107.4 41.8516 107.504 41.5821 107.711L41.295 107.945L40.4278 107.723Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="section-third__container">
+                        <h3 class="h3">Адаптивная структура товаров одного бренда</h3>
+
+                        <img class="bottle-mobil wow fadeIn" src="img/bottle-mobil-img.png" alt="">
+
+                        <ul class="section-third__list">
+                            <li class="section-third__item">
+                                <div class="section-third__block">
+                                    <i class="red-arrow red-arrow_mr"></i>
+                                    <p class="main-text">Одна и та же бутылка разных годов выпуска</p>
+                                </div>
+                            </li>
+                            <li class="section-third__item">
+                                <div class="section-third__block">
+                                    <i class="red-arrow red-arrow_mr"></i>
+                                    <p class="main-text"> Одна и та же бутылка разного объема</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-fourth">
+        <div id="trigger"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-9 order-0 col-md-6">
+                    <div class="section-fourth-content">
+                        <h3 class="h3">Как это работает на примере</h3>
+                        <div class="section-fourth-content__textContainer">
+                            <p class="section-fourth-content__text">Сбоку от характеристик товара, вы видите весь асортимент каталога.</p>
+                            <ul class="section-fourth-content__list">
+                                <li class="section-fourth-content__item">
+                                    <div class="section-fourth-content__item-container">
+                                        <div class="section-fourth-content__icon">
+                                            <i class="measuring-jug-icon mt-2"></i>
+                                        </div>
+                                        <div class="section-fourth-content__item-content">
+                                            <span class="section-fourth-content__item-content-title">Объем</span>
+                                            <p class="section-fourth-content__text">Переключение между объемами прямо внутри карточки.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="section-fourth-content__item">
+                                    <div class="section-fourth-content__item-container">
+                                        <div class="section-fourth-content__icon">
+                                            <i class="event-icon"></i>
+                                        </div>
+                                        <div class="section-fourth-content__item-content">
+                                            <span class="section-fourth-content__item-content-title">Винтаж</span>
+                                            <p class="section-fourth-content__text">Все года винтажа продукции можно переключать и видеть наличие или отсутвие товара.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 order-1 col-md-6">
+                    <div class="section-fourth__img-container section-fourth__img-container-first">
+                        <img class="img-setting-wineship" src="img/img-setting-wineship.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 order-3 order-md-2 col-md-6">
+                    <div id="trigger1"></div>
+                    <div class="section-fourth__img-container section-fourth__img-container-second">
+                        <img class="laptop-section-fourth" src="img/laptop-section-fourth.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 order-2 order-md-3 col-md-6">
+                    <div class="section-fourth-content pt-90px">
+                        <h3 class="h3">Полезные характеристики</h3>
+                        <div class="section-fourth-content__textContainer">
+                            <p class="section-fourth-content__text">Все характеристики - это анкорные ссылки на дргие страницы товаров. Данное решение создало качественную внутреннюю линковку и  позволило значительно повысить распределение веса между страницами товара.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 order-4 col-md-6">
+                    <div class="section-fourth-content">
+                        <h3 class="h3">Настраиваемый фильтр</h3>
+                        <div class="section-fourth-content__textContainer">
+                            <p class="section-fourth-content__text">Адаптивный фильтр автоматически убирает позиции, если по ним нет товаров.</p>
+                            <br>
+                            <p class="section-fourth-content__text">Возможность появления битых ссылок на основе страниц товара была исключена на этапе разработки.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 order-5 col-md-6">
+                    <div id="trigger2"></div>
+                    <div class="section-fourth__img-container section-fourth__img-container-third">
+                        <img class="tablet-section-fourth" src="img/tablet-section-fourth.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-fifth section-bg-black">
+        <div class="container">
+            <h3 class="h3 mx-auto">Дизайн система проекта</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="example-font example-font-Oranienbaum">
+                        <span class="example-font__title">Oranienbaum Regular</span>
+                        <ul class="example-font__content">
+                            <li class="example-font__item">
+                                <p class="example-font__text font-family-Oranienbaum fz42">Заголовок Large</p>
+                                <span class="example-font__fz">42px</span>
+                            </li>
+                            <li class="example-font__item">
+                                <p class="example-font__text font-family-Oranienbaum fz36">Заголовок Medium</p>
+                                <span class="example-font__fz">36px</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="example-font example-font-PT">
+                        <span class="example-font__title">PT Sans Narrow</span>
+                        <ul class="example-font__content">
+                            <li class="example-font__item">
+                                <p class="example-font__text font-family-PT fz32">Заголовок Small</p>
+                                <span class="example-font__fz">32px</span>
+                            </li>
+                            <li class="example-font__item">
+                                <p class="example-font__text font-family-PT fz24">Текст  Large</p>
+                                <span class="example-font__fz">24px</span>
+                            </li>
+                            <li class="example-font__item">
+                                <p class="example-font__text font-family-PT fz18">Текст  Medium</p>
+                                <span class="example-font__fz">18px</span>
+                            </li>
+                            <li class="example-font__item">
+                                <p class="example-font__text font-family-PT fz16">Текст  Small</p>
+                                <span class="example-font__fz">16px</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 section-fifth__border-dottedLine">
+                    <div class="colors-block">
+                        <span class="colors-block__title">Цвета</span>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="colors-block__item">
+                                    <span class="colors-block__circle colors-block__circle-pink"></span>
+                                    <p class="colors-block__text">#BE2258</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="colors-block__item">
+                                    <span class="colors-block__circle colors-block__circle-orange"></span>
+                                    <p class="colors-block__text">#BE2258</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="colors-block__item">
+                                    <span class="colors-block__circle colors-block__circle-grayViolet"></span>
+                                    <p class="colors-block__text">#BE2258</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="colors-block__item">
+                                    <span class="colors-block__circle colors-block__circle-black"></span>
+                                    <p class="colors-block__text">#BE2258</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="colors-block__item">
+                                    <span class="colors-block__circle colors-block__circle-grey"></span>
+                                    <p class="colors-block__text">#BE2258</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="colors-block__item">
+                                    <span class="colors-block__circle colors-block__circle-white"></span>
+                                    <p class="colors-block__text">#BE2258</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements">
+                        <span class="elements__title">Элементы</span>
+                        <div class="row">
+                            <div class="col-6 col-xl-4">
+                                <img src="img/example-btn-white.svg" alt="">
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <img src="img/example-btn-black.svg" alt="">
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <img class="mt-2" src="img/example-select.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="elements-bottle">
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                            <div class="elements-bottle__icon">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-sixth">
+        <div class="container">
+            <h3 class="h3">Эскизы основных страниц</h3>
+            <div class="row" id="testId">
+                <div class="col-md-6">
+                    <div class="section-sixth__container">
+                        <div class="gallery">
+                            <a href="img/screenshot-page-1-3x.png">
+                                <img class="wow fadeIn minimized" src="img/screenshot-page-1.png" alt="">
+                            </a>
+                            <a href="img/screenshot-page-2-3x.png" class="gallery__mobil">
+                                <img class="wow fadeIn minimized" src="img/screenshot-page-2.png" alt="">
+                            </a>
+                            <a href="img/screenshot-page-3-3x.png" class="gallery__mobil">
+                                <img class="wow fadeIn minimized" src="img/screenshot-page-3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-sixth__container">
+                        <div class="gallery">
+                            <a href="img/screenshot-page-4-3x.png">
+                                <img class="wow fadeIn minimized" src="img/screenshot-page-4.png" alt="">
+                            </a>
+                            <a href="img/screenshot-page-5-3x.png">
+                                <img class="wow fadeIn minimized" src="img/screenshot-page-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-seventh">
+        <div class="container">
+            <h4 class="h4 wow fadeIn">Адаптивная мобильная версия</h4>
+            <p class="section-seventh__desc wow fadeIn">Продуманный UX функционал на основе юзабилити аудита для всех шаблонов внутренних страниц</p>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="section-seventh__block wow fadeIn gallery-1">
+                        <a href="img/example-page-mobil-img-1-3x.png">
+                            <img src="img/example-page-mobil-img-1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="section-seventh__block wow fadeIn gallery-1">
+                        <a href="img/example-page-mobil-img-2-3x.png">
+                            <img src="img/example-page-mobil-img-2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="section-seventh__block wow fadeIn gallery-1">
+                        <a href="img/example-page-mobil-img-3-3x.png">
+                            <img src="img/example-page-mobil-img-3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="section-seventh__block wow fadeIn gallery-1">
+                        <a href="img/example-page-mobil-img-4-3x.png">
+                            <img src="img/example-page-mobil-img-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-eighth section-bg-black">
+        <div class="container">
+            <h3 class="h3">Используемые технологии</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-eighth__container">
+                        <svg width="958" height="923" viewBox="0 0 958 923" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="first-circle">
+                                <circle cx="477.5" cy="461.5" r="405" stroke="#545454" stroke-dasharray="2 5"/>
+                                <g id="first-circle__bootstrap" class="first-circle__logo">
+                                    <path d="M849 548.553C849 552.114 851.887 555 855.447 555H892.553C896.114 555 899 552.113 899 548.553V511.447C899 507.886 896.113 505 892.553 505H855.447C851.886 505 849 507.887 849 511.447V548.553V548.553Z" fill="#563D7C"/>
+                                    <path d="M869.734 527.117V520.036H875.967C876.56 520.036 877.133 520.086 877.684 520.185C878.235 520.283 878.723 520.46 879.147 520.714C879.571 520.969 879.91 521.322 880.164 521.774C880.419 522.227 880.546 522.806 880.546 523.513C880.546 524.785 880.164 525.704 879.401 526.269C878.638 526.834 877.663 527.117 876.475 527.117H869.734V527.117ZM863.077 514.863V545.137H877.747C879.104 545.137 880.426 544.967 881.712 544.628C882.998 544.289 884.143 543.766 885.146 543.059C886.15 542.353 886.948 541.441 887.542 540.324C888.136 539.208 888.432 537.886 888.432 536.36C888.432 534.466 887.973 532.848 887.054 531.505C886.136 530.163 884.743 529.223 882.878 528.686C884.235 528.036 885.259 527.202 885.952 526.184C886.644 525.166 886.991 523.895 886.991 522.368C886.991 520.955 886.757 519.768 886.291 518.806C885.825 517.846 885.167 517.075 884.319 516.496C883.471 515.916 882.454 515.499 881.267 515.245C880.079 514.99 878.765 514.863 877.323 514.863H863.077V514.863ZM869.734 539.964V531.654H876.984C878.426 531.654 879.585 531.986 880.461 532.65C881.337 533.314 881.776 534.424 881.776 535.978C881.776 536.77 881.641 537.42 881.373 537.929C881.104 538.438 880.744 538.84 880.291 539.137C879.839 539.434 879.316 539.646 878.723 539.773C878.129 539.9 877.507 539.964 876.857 539.964H869.734V539.964Z" fill="white"/>
+                                </g>
+                                <rect id="first-circle__js" class="first-circle__logo" x="273" y="56" width="56" height="56" fill="url(#pattern0)"/>
+                                <g id="first-circle__html" class="first-circle__logo">
+                                    <g clip-path="url(#clip1)">
+                                        <path d="M713.555 167.373L709 116.76H759L754.445 167.373L733.965 173L713.555 167.373Z" fill="#E44D26"/>
+                                        <path d="M734 168.699L750.548 164.147L754.434 120.9H734V168.699Z" fill="#F16529"/>
+                                        <path d="M734 139.67H725.72L725.144 133.31H734V127.1H733.977H718.306L718.456 128.77L719.989 145.881H734V139.67Z" fill="#EBEBEB"/>
+                                        <path d="M734 155.797H733.977L727 153.933L726.551 148.98H723.172H720.266L721.154 158.737L733.965 162.26L734 162.248V155.797Z" fill="#EBEBEB"/>
+                                        <path d="M713.647 103H716.83V106.123H719.736V103H722.918V112.436H719.747V109.279H716.83V112.436H713.647V103Z" fill="white"/>
+                                        <path d="M727.104 106.134H724.302V103H733.089V106.134H730.287V112.448H727.104V106.134Z" fill="white"/>
+                                        <path d="M734.484 103H737.805L739.846 106.317L741.887 103H745.208V112.436H742.037V107.758L739.846 111.109H739.789L737.598 107.758V112.436H734.484V103Z" fill="white"/>
+                                        <path d="M746.777 103H749.959V109.325H754.434V112.448H746.777V103Z" fill="white"/>
+                                        <path d="M733.977 139.67V145.881H741.68L740.953 153.933L733.977 155.797V162.26L746.811 158.737L746.904 157.685L748.38 141.34L748.53 139.67H746.834H733.977Z" fill="white"/>
+                                        <path d="M733.977 127.1V130.966V133.299V133.31H749.071H749.095L749.221 131.915L749.51 128.77L749.66 127.1H733.977Z" fill="white"/>
+                                    </g>
+                                </g>
+                                <g id="first-circle__css" class="first-circle__logo">
+                                    <path d="M83.9695 427.821L63.6214 422.132L59.0869 370.918H108.913L104.374 422.124L83.9695 427.821Z" fill="#264DE4"/>
+                                    <path d="M100.488 418.864L104.367 375.105H84V423.467L100.488 418.864Z" fill="#2965F1"/>
+                                    <path d="M69.4821 394.101L70.0412 400.382H84V394.101H69.4821Z" fill="#EBEBEB"/>
+                                    <path d="M68.3588 381.387L68.9258 387.668H84V381.387H68.3588Z" fill="#EBEBEB"/>
+                                    <path d="M84 410.414L83.9727 410.421L77.0257 408.532L76.5816 403.522H70.3199L71.1938 413.385L83.9713 416.957L84 416.949V410.414Z" fill="#EBEBEB"/>
+                                    <path d="M70.8132 357H78.3681V360.181H73.9725V363.363H78.3681V366.544H70.8132V357Z" fill="white"/>
+                                    <path d="M79.8791 357H87.4341V359.766H83.0385V360.32H87.4341V366.683H79.8791V363.778H84.2747V363.224H79.8791V357Z" fill="white"/>
+                                    <path d="M88.9451 357H96.5V359.766H92.1044V360.32H96.5V366.683H88.9451V363.778H93.3407V363.224H88.9451V357Z" fill="white"/>
+                                    <path d="M98.4779 394.1L99.604 381.387H83.9784V387.668H92.768L92.2004 394.1H83.9784V400.381H91.6595L90.9354 408.528L83.9784 410.418V416.953L96.7661 413.384L96.8599 412.323L98.3257 395.787L98.4779 394.1Z" fill="white"/>
+                                </g>
+                            </g>
+
+                            <g id="second-circle">
+                                <circle cx="477" cy="462" r="288.5" stroke="#545454" stroke-dasharray="2 5"/>
+                                <g class="second-circle__logo" id="second-circle__msql" clip-path="url(#clip0)">
+                                    <path d="M272.896 704.799H269.81C269.7 699.591 269.4 694.695 268.908 690.108H268.881L264.182 704.799H261.832L257.161 690.108H257.134C256.788 694.512 256.57 699.41 256.479 704.799H253.666C253.847 698.245 254.303 692.101 255.031 686.365H258.856L263.308 699.91H263.336L267.815 686.365H271.475C272.277 693.083 272.75 699.228 272.896 704.799V704.799ZM286.281 691.199C285.024 698.016 283.366 702.969 281.308 706.061C279.705 708.441 277.949 709.632 276.036 709.632C275.526 709.632 274.897 709.478 274.152 709.173V707.529C274.516 707.582 274.944 707.611 275.435 707.611C276.329 707.611 277.047 707.366 277.594 706.873C278.249 706.274 278.576 705.599 278.576 704.853C278.576 704.342 278.321 703.296 277.812 701.713L274.425 691.198H277.457L279.888 699.062C280.434 700.848 280.662 702.094 280.571 702.804C281.9 699.255 282.829 695.385 283.358 691.197H286.281V691.199V691.199Z" fill="#5D87A1"/>
+                                    <path d="M327.363 704.801H318.596V686.367H321.545V702.532H327.363V704.801ZM316.301 705.246L312.911 703.574C313.212 703.327 313.499 703.06 313.758 702.751C315.199 701.059 315.917 698.556 315.917 695.242C315.917 689.144 313.523 686.093 308.734 686.093C306.385 686.093 304.553 686.867 303.243 688.415C301.803 690.108 301.085 692.601 301.085 695.898C301.085 699.138 301.722 701.515 302.996 703.023C304.162 704.389 305.92 705.073 308.27 705.073C309.147 705.073 309.951 704.965 310.684 704.749L315.097 707.317L316.301 705.246ZM305.32 701.112C304.573 699.911 304.2 697.983 304.2 695.325C304.2 690.684 305.61 688.36 308.434 688.36C309.91 688.36 310.992 688.916 311.684 690.025C312.429 691.227 312.804 693.138 312.804 695.76C312.804 700.439 311.393 702.779 308.57 702.779C307.094 702.78 306.012 702.226 305.32 701.112V701.112ZM299.799 699.691C299.799 701.255 299.226 702.537 298.079 703.542C296.932 704.542 295.393 705.044 293.465 705.044C291.662 705.044 289.913 704.468 288.221 703.322L289.013 701.739C290.47 702.468 291.788 702.83 292.972 702.83C294.083 702.83 294.951 702.584 295.581 702.096C296.21 701.606 296.585 700.918 296.585 700.049C296.585 698.954 295.821 698.018 294.42 697.234C293.128 696.524 290.543 695.041 290.543 695.041C289.142 694.02 288.441 692.925 288.441 691.119C288.441 689.625 288.964 688.419 290.01 687.502C291.058 686.58 292.41 686.121 294.068 686.121C295.779 686.121 297.335 686.58 298.737 687.487L298.026 689.071C296.827 688.562 295.644 688.307 294.477 688.307C293.531 688.307 292.801 688.534 292.294 688.99C291.782 689.445 291.467 690.026 291.467 690.739C291.467 691.829 292.247 692.777 293.686 693.576C294.996 694.287 297.645 695.796 297.645 695.796C299.082 696.815 299.799 697.9 299.799 699.691" fill="#F8981D"/>
+                                    <path d="M331.065 680.191C329.282 680.146 327.901 680.325 326.742 680.815C326.408 680.949 325.876 680.949 325.829 681.371C326.01 681.55 326.031 681.839 326.188 682.086C326.455 682.531 326.921 683.13 327.346 683.443C327.813 683.8 328.282 684.154 328.773 684.466C329.64 685.002 330.622 685.314 331.466 685.848C331.958 686.159 332.447 686.561 332.94 686.895C333.182 687.073 333.337 687.363 333.652 687.474V687.406C333.494 687.206 333.449 686.916 333.295 686.693L332.626 686.048C331.979 685.18 331.176 684.422 330.309 683.8C329.596 683.308 328.036 682.641 327.747 681.819L327.701 681.774C328.192 681.728 328.773 681.55 329.239 681.414C329.997 681.214 330.688 681.259 331.466 681.06C331.824 680.97 332.179 680.858 332.538 680.748V680.547C332.134 680.146 331.847 679.613 331.423 679.233C330.289 678.254 329.039 677.296 327.747 676.494C327.055 676.047 326.165 675.76 325.429 675.38C325.163 675.246 324.716 675.18 324.56 674.957C324.16 674.467 323.935 673.822 323.645 673.242C323.001 672.018 322.376 670.659 321.82 669.365C321.418 668.497 321.173 667.63 320.683 666.827C318.387 663.041 315.894 660.748 312.061 658.498C311.238 658.029 310.258 657.829 309.211 657.584L307.539 657.495C307.183 657.339 306.825 656.915 306.514 656.715C305.243 655.914 301.969 654.177 301.034 656.47C300.432 657.919 301.925 659.344 302.438 660.079C302.817 660.59 303.307 661.17 303.572 661.75C303.729 662.128 303.773 662.53 303.93 662.93C304.287 663.91 304.62 665.001 305.089 665.915C305.333 666.382 305.6 666.872 305.912 667.294C306.091 667.541 306.403 667.65 306.471 668.052C306.16 668.496 306.135 669.165 305.957 669.722C305.156 672.239 305.469 675.356 306.605 677.206C306.96 677.763 307.808 678.988 308.943 678.519C309.947 678.118 309.725 676.849 310.013 675.735C310.079 675.467 310.036 675.29 310.169 675.114V675.157C310.48 675.78 310.794 676.381 311.082 677.005C311.773 678.096 312.977 679.232 313.979 679.988C314.513 680.391 314.936 681.08 315.604 681.326V681.259H315.56C315.425 681.06 315.227 680.97 315.049 680.815C314.647 680.414 314.202 679.924 313.89 679.479C312.956 678.231 312.13 676.85 311.396 675.424C311.037 674.733 310.728 673.977 310.438 673.286C310.304 673.02 310.304 672.618 310.08 672.484C309.745 672.973 309.256 673.397 309.012 673.997C308.588 674.956 308.544 676.136 308.386 677.363L308.299 677.406C307.589 677.228 307.342 676.494 307.072 675.871C306.405 674.288 306.293 671.749 306.872 669.923C307.027 669.456 307.698 667.986 307.43 667.541C307.296 667.115 306.85 666.872 306.605 666.537C306.318 666.115 306.003 665.58 305.803 665.112C305.268 663.865 304.999 662.484 304.424 661.238C304.155 660.657 303.688 660.056 303.31 659.521C302.885 658.92 302.418 658.497 302.082 657.784C301.971 657.539 301.816 657.139 301.994 656.872C302.038 656.693 302.128 656.627 302.306 656.582C302.595 656.338 303.42 656.648 303.709 656.782C304.535 657.116 305.225 657.428 305.915 657.895C306.227 658.119 306.561 658.542 306.961 658.654H307.43C308.142 658.809 308.944 658.697 309.614 658.898C310.794 659.277 311.863 659.834 312.822 660.434C315.74 662.284 318.147 664.913 319.771 668.052C320.038 668.564 320.151 669.032 320.394 669.566C320.864 670.658 321.444 671.772 321.91 672.841C322.378 673.887 322.824 674.956 323.493 675.825C323.826 676.292 325.166 676.537 325.766 676.782C326.21 676.982 326.902 677.16 327.303 677.405C328.061 677.872 328.816 678.408 329.529 678.921C329.884 679.188 330.999 679.745 331.065 680.191V680.191ZM308.339 660.836C308.032 660.833 307.725 660.87 307.427 660.948V660.993H307.47C307.65 661.349 307.962 661.595 308.184 661.906C308.364 662.263 308.519 662.617 308.695 662.974L308.738 662.93C309.052 662.707 309.209 662.351 309.209 661.816C309.073 661.659 309.052 661.505 308.94 661.349C308.808 661.126 308.519 661.015 308.339 660.836" fill="#5D87A1"/>
+                                    <path d="M333.187 704.796H333.649V702.538H332.956L332.391 704.079L331.778 702.538H331.111V704.796H331.547V703.078H331.571L332.214 704.796H332.546L333.187 703.078V704.796ZM329.468 704.796H329.957V702.92H330.596V702.537H328.802V702.92H329.467L329.468 704.796Z" fill="#F8981D"/>
+                                </g>
+                                <g class="second-circle__logo" id="second-circle__angular">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M702.003 594.364V577.594H704.155L714.381 591.089V577.594H716.427V594.364H714.275L704.048 580.735V594.364H702.003Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M733.081 593.698C731.727 594.204 730.266 594.47 728.725 594.47C722.669 594.47 719.641 591.569 719.641 585.739C719.641 580.229 722.562 577.461 728.406 577.461C730.08 577.461 731.647 577.701 733.081 578.153V580.016C731.647 579.457 730.159 579.191 728.645 579.191C724.077 579.191 721.792 581.374 721.792 585.686C721.792 590.344 724.05 592.66 728.539 592.66C729.256 592.66 730.053 592.554 730.93 592.367V586.751H733.081V593.698Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M736.534 587.895V577.594H738.686V587.895C738.686 591.116 740.28 592.74 743.494 592.74C746.681 592.74 748.302 591.116 748.302 587.895V577.594H750.453V587.895C750.453 592.287 748.142 594.497 743.494 594.497C738.845 594.497 736.534 592.287 736.534 587.895Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M756.456 577.594V592.607H765.222V594.364H754.305V577.594H756.456Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M768.33 594.364H766.072L774.386 575.385L782.7 594.364H780.309L778.158 589.093H772.633L773.217 587.337H777.441L774.306 579.75L768.33 594.364Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M785.011 594.364V577.594H792.156C795.344 577.594 796.937 578.925 796.937 581.613C796.937 583.796 795.37 585.42 792.262 586.458L798 594.364H795.158L789.845 586.83V585.42C793.033 584.914 794.653 583.689 794.653 581.72C794.653 580.176 793.777 579.404 791.997 579.404H787.216V594.364H785.011Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M662 573.122L679.133 567L696.717 573.016L693.875 595.722L679.133 603.894L664.63 595.828L662 573.122Z" fill="#E23237"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M696.717 573.016L679.133 567V603.894L693.875 595.722L696.717 573.016Z" fill="#B52E31"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M679.159 571.312L668.481 595.11L672.466 595.03L674.617 589.653H679.159H684.153L686.491 595.083L690.289 595.163L679.159 571.312ZM679.186 578.952L682.798 586.512H679.345H679.159H676.025L679.186 578.952Z" fill="white"/>
+                                </g>
+                            </g>
+
+                            <g id="third-circle">
+                                <circle cx="477" cy="462" r="160.5" stroke="#545454" stroke-dasharray="2 5"/>
+                                <path id="third-circle__apiLaravel" class="third-circle__logo"
+                                        d="M469.832 619.484H463.668L462.496 623H458.758L465.109 605.938H468.367L474.754 623H471.016L469.832 619.484ZM464.617 616.637H468.883L466.738 610.25L464.617 616.637ZM479.863 616.988V623H476.348V605.938H483.004C484.285 605.938 485.41 606.172 486.379 606.641C487.355 607.109 488.105 607.777 488.629 608.645C489.152 609.504 489.414 610.484 489.414 611.586C489.414 613.258 488.84 614.578 487.691 615.547C486.551 616.508 484.969 616.988 482.945 616.988H479.863ZM479.863 614.141H483.004C483.934 614.141 484.641 613.922 485.125 613.484C485.617 613.047 485.863 612.422 485.863 611.609C485.863 610.773 485.617 610.098 485.125 609.582C484.633 609.066 483.953 608.801 483.086 608.785H479.863V614.141ZM495.578 623H492.062V605.938H495.578V623ZM443.887 648.176H451.352V651H440.371V633.938H443.887V648.176ZM460.504 651C460.348 650.695 460.234 650.316 460.164 649.863C459.344 650.777 458.277 651.234 456.965 651.234C455.723 651.234 454.691 650.875 453.871 650.156C453.059 649.438 452.652 648.531 452.652 647.438C452.652 646.094 453.148 645.062 454.141 644.344C455.141 643.625 456.582 643.262 458.465 643.254H460.023V642.527C460.023 641.941 459.871 641.473 459.566 641.121C459.27 640.77 458.797 640.594 458.148 640.594C457.578 640.594 457.129 640.73 456.801 641.004C456.48 641.277 456.32 641.652 456.32 642.129H452.934C452.934 641.395 453.16 640.715 453.613 640.09C454.066 639.465 454.707 638.977 455.535 638.625C456.363 638.266 457.293 638.086 458.324 638.086C459.887 638.086 461.125 638.48 462.039 639.27C462.961 640.051 463.422 641.152 463.422 642.574V648.07C463.43 649.273 463.598 650.184 463.926 650.801V651H460.504ZM457.703 648.645C458.203 648.645 458.664 648.535 459.086 648.316C459.508 648.09 459.82 647.789 460.023 647.414V645.234H458.758C457.062 645.234 456.16 645.82 456.051 646.992L456.039 647.191C456.039 647.613 456.188 647.961 456.484 648.234C456.781 648.508 457.188 648.645 457.703 648.645ZM473.148 641.496C472.688 641.434 472.281 641.402 471.93 641.402C470.648 641.402 469.809 641.836 469.41 642.703V651H466.023V638.32H469.223L469.316 639.832C469.996 638.668 470.938 638.086 472.141 638.086C472.516 638.086 472.867 638.137 473.195 638.238L473.148 641.496ZM481.785 651C481.629 650.695 481.516 650.316 481.445 649.863C480.625 650.777 479.559 651.234 478.246 651.234C477.004 651.234 475.973 650.875 475.152 650.156C474.34 649.438 473.934 648.531 473.934 647.438C473.934 646.094 474.43 645.062 475.422 644.344C476.422 643.625 477.863 643.262 479.746 643.254H481.305V642.527C481.305 641.941 481.152 641.473 480.848 641.121C480.551 640.77 480.078 640.594 479.43 640.594C478.859 640.594 478.41 640.73 478.082 641.004C477.762 641.277 477.602 641.652 477.602 642.129H474.215C474.215 641.395 474.441 640.715 474.895 640.09C475.348 639.465 475.988 638.977 476.816 638.625C477.645 638.266 478.574 638.086 479.605 638.086C481.168 638.086 482.406 638.48 483.32 639.27C484.242 640.051 484.703 641.152 484.703 642.574V648.07C484.711 649.273 484.879 650.184 485.207 650.801V651H481.785ZM478.984 648.645C479.484 648.645 479.945 648.535 480.367 648.316C480.789 648.09 481.102 647.789 481.305 647.414V645.234H480.039C478.344 645.234 477.441 645.82 477.332 646.992L477.32 647.191C477.32 647.613 477.469 647.961 477.766 648.234C478.062 648.508 478.469 648.645 478.984 648.645ZM491.863 646.863L494.219 638.32H497.758L493.48 651H490.246L485.969 638.32H489.508L491.863 646.863ZM504.93 651.234C503.07 651.234 501.555 650.664 500.383 649.523C499.219 648.383 498.637 646.863 498.637 644.965V644.637C498.637 643.363 498.883 642.227 499.375 641.227C499.867 640.219 500.562 639.445 501.461 638.906C502.367 638.359 503.398 638.086 504.555 638.086C506.289 638.086 507.652 638.633 508.645 639.727C509.645 640.82 510.145 642.371 510.145 644.379V645.762H502.07C502.18 646.59 502.508 647.254 503.055 647.754C503.609 648.254 504.309 648.504 505.152 648.504C506.457 648.504 507.477 648.031 508.211 647.086L509.875 648.949C509.367 649.668 508.68 650.23 507.812 650.637C506.945 651.035 505.984 651.234 504.93 651.234ZM504.543 640.828C503.871 640.828 503.324 641.055 502.902 641.508C502.488 641.961 502.223 642.609 502.105 643.453H506.816V643.184C506.801 642.434 506.598 641.855 506.207 641.449C505.816 641.035 505.262 640.828 504.543 640.828ZM515.652 651H512.254V633H515.652V651Z" fill="#D3D3D3"/>
+                                <path id="third-circle__blade" class="third-circle__logo"
+                                        d="M572.477 381V355.406H581.441C584.547 355.406 586.902 356.004 588.508 357.199C590.113 358.383 590.916 360.123 590.916 362.42C590.916 363.674 590.594 364.781 589.949 365.742C589.305 366.691 588.408 367.389 587.26 367.834C588.572 368.162 589.604 368.824 590.354 369.82C591.115 370.816 591.496 372.035 591.496 373.477C591.496 375.938 590.711 377.801 589.141 379.066C587.57 380.332 585.332 380.977 582.426 381H572.477ZM577.75 369.855V376.764H582.268C583.51 376.764 584.477 376.471 585.168 375.885C585.871 375.287 586.223 374.467 586.223 373.424C586.223 371.08 585.01 369.891 582.584 369.855H577.75ZM577.75 366.129H581.652C584.312 366.082 585.643 365.021 585.643 362.947C585.643 361.787 585.303 360.955 584.623 360.451C583.955 359.936 582.895 359.678 581.441 359.678H577.75V366.129ZM600.496 381H595.398V354H600.496V381ZM615.719 381C615.484 380.543 615.314 379.975 615.209 379.295C613.979 380.666 612.379 381.352 610.41 381.352C608.547 381.352 607 380.812 605.77 379.734C604.551 378.656 603.941 377.297 603.941 375.656C603.941 373.641 604.686 372.094 606.174 371.016C607.674 369.938 609.836 369.393 612.66 369.381H614.998V368.291C614.998 367.412 614.77 366.709 614.312 366.182C613.867 365.654 613.158 365.391 612.186 365.391C611.33 365.391 610.656 365.596 610.164 366.006C609.684 366.416 609.443 366.979 609.443 367.693H604.363C604.363 366.592 604.703 365.572 605.383 364.635C606.062 363.697 607.023 362.965 608.266 362.438C609.508 361.898 610.902 361.629 612.449 361.629C614.793 361.629 616.65 362.221 618.021 363.404C619.404 364.576 620.096 366.229 620.096 368.361V376.605C620.107 378.41 620.359 379.775 620.852 380.701V381H615.719ZM611.518 377.467C612.268 377.467 612.959 377.303 613.592 376.975C614.225 376.635 614.693 376.184 614.998 375.621V372.352H613.1C610.557 372.352 609.203 373.23 609.039 374.988L609.021 375.287C609.021 375.92 609.244 376.441 609.689 376.852C610.135 377.262 610.744 377.467 611.518 377.467ZM623.207 371.35C623.207 368.385 623.869 366.023 625.193 364.266C626.529 362.508 628.352 361.629 630.66 361.629C632.512 361.629 634.041 362.32 635.248 363.703V354H640.346V381H635.758L635.512 378.979C634.246 380.561 632.617 381.352 630.625 381.352C628.387 381.352 626.588 380.473 625.229 378.715C623.881 376.945 623.207 374.49 623.207 371.35ZM628.287 371.719C628.287 373.5 628.598 374.865 629.219 375.814C629.84 376.764 630.742 377.238 631.926 377.238C633.496 377.238 634.604 376.576 635.248 375.252V367.746C634.615 366.422 633.52 365.76 631.961 365.76C629.512 365.76 628.287 367.746 628.287 371.719ZM653.037 381.352C650.248 381.352 647.975 380.496 646.217 378.785C644.471 377.074 643.598 374.795 643.598 371.947V371.455C643.598 369.545 643.967 367.84 644.705 366.34C645.443 364.828 646.486 363.668 647.834 362.859C649.193 362.039 650.74 361.629 652.475 361.629C655.076 361.629 657.121 362.449 658.609 364.09C660.109 365.73 660.859 368.057 660.859 371.068V373.143H648.748C648.912 374.385 649.404 375.381 650.225 376.131C651.057 376.881 652.105 377.256 653.371 377.256C655.328 377.256 656.857 376.547 657.959 375.129L660.455 377.924C659.693 379.002 658.662 379.846 657.361 380.455C656.061 381.053 654.619 381.352 653.037 381.352ZM652.457 365.742C651.449 365.742 650.629 366.082 649.996 366.762C649.375 367.441 648.977 368.414 648.801 369.68H655.867V369.275C655.844 368.15 655.539 367.283 654.953 366.674C654.367 366.053 653.535 365.742 652.457 365.742Z" fill="#D3D3D3"/>
+                                <g id="third-circle__php"  class="third-circle__logo">
+                                    <path d="M315.131 376.386C317.86 376.386 319.859 377.119 321.13 378.504C322.4 379.888 322.859 381.784 322.507 384.181C322.363 385.277 322.037 386.353 321.531 387.407C321.024 388.461 320.306 389.413 319.376 390.26C318.24 391.335 317.019 392.018 315.711 392.306C314.403 392.596 313.043 392.741 311.631 392.741H307.463L306.314 398.663H301.484L305.82 376.385H315.131V376.386ZM309.96 379.939L308.146 389.238C308.304 389.259 308.916 389.269 309.078 389.269C311.298 389.29 313.215 389.285 314.616 388.665C316.13 387.995 317.087 386.749 317.521 384.166C317.875 381.997 317.402 380.827 316.169 380.349C315.62 380.136 315.052 380.029 314.359 379.951C313.524 379.857 312.47 379.928 311.455 379.938C311.194 379.96 309.96 379.939 309.96 379.939Z" fill="white"/>
+                                    <path d="M331.724 370.464L330.569 376.386H334.877C337.231 376.48 339.005 376.871 340.199 377.697C341.393 378.524 341.775 380.1 341.347 382.414L339.332 392.742H334.469L336.392 382.884C336.593 381.851 336.505 381.117 336.127 380.683C335.748 380.248 334.958 379.989 333.73 379.989L329.882 379.934L327.381 392.742H322.587L326.93 370.464H331.724V370.464Z" fill="white"/>
+                                    <path d="M353.953 376.386C356.682 376.386 358.681 377.119 359.952 378.504C361.222 379.888 361.681 381.784 361.329 384.181C361.185 385.277 360.859 386.353 360.353 387.407C359.846 388.461 359.128 389.413 358.198 390.26C357.062 391.335 355.841 392.018 354.533 392.306C353.225 392.596 351.865 392.741 350.452 392.741H346.284L345.135 398.663H340.306L344.642 376.385H353.953V376.386ZM348.782 379.939L346.968 389.238C347.126 389.259 347.738 389.269 347.9 389.269C350.12 389.29 352.037 389.285 353.438 388.665C354.952 387.995 355.909 386.749 356.343 384.166C356.697 381.997 356.224 380.827 354.991 380.349C354.442 380.136 353.874 380.029 353.181 379.951C352.346 379.857 351.292 379.928 350.277 379.938C350.016 379.96 348.782 379.939 348.782 379.939Z" fill="white"/>
+                                    <path d="M362.651 374.318L362.655 370.464H382.546V374.321L369.117 392.742H363.101L377.026 374.318H362.651Z" fill="white"/>
+                                </g>
+                            </g>
+
+                            <circle class="d-none" cx="477.5" cy="461.5" r="73" stroke="#545454" stroke-dasharray="2 5"/>
+                            <g id="logo-laravel-center">
+                                <g clip-path="url(#clip2)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M443.258 448.643C443.278 448.718 443.288 448.795 443.289 448.872V460.868C443.289 461.022 443.248 461.173 443.171 461.306C443.094 461.44 442.983 461.55 442.849 461.627L432.781 467.423V478.913C432.781 479.226 432.614 479.515 432.343 479.672L411.326 491.771C411.278 491.798 411.225 491.816 411.173 491.834C411.153 491.841 411.135 491.853 411.114 491.859C410.967 491.897 410.813 491.897 410.666 491.859C410.642 491.852 410.62 491.839 410.597 491.83C410.549 491.813 410.498 491.797 410.452 491.771L389.44 479.672C389.306 479.595 389.195 479.485 389.118 479.352C389.041 479.219 389 479.067 389 478.913V442.925C389 442.846 389.011 442.77 389.031 442.695C389.037 442.67 389.052 442.647 389.061 442.622C389.078 442.576 389.093 442.529 389.117 442.487C389.133 442.458 389.157 442.435 389.177 442.409C389.202 442.374 389.225 442.338 389.255 442.307C389.28 442.282 389.313 442.264 389.341 442.242C389.373 442.215 389.401 442.187 389.437 442.166H389.438L399.945 436.117C400.078 436.04 400.229 436 400.383 436C400.536 436 400.687 436.04 400.82 436.117L411.327 442.166H411.329C411.364 442.188 411.394 442.215 411.425 442.241C411.454 442.263 411.486 442.282 411.511 442.306C411.541 442.338 411.563 442.374 411.589 442.409C411.608 442.435 411.633 442.458 411.648 442.487C411.674 442.53 411.688 442.576 411.705 442.622C411.714 442.647 411.729 442.67 411.736 442.697C411.756 442.771 411.766 442.848 411.767 442.925V465.403L420.522 460.362V448.871C420.522 448.794 420.533 448.716 420.553 448.643C420.56 448.617 420.575 448.594 420.583 448.569C420.601 448.523 420.616 448.476 420.64 448.433C420.657 448.405 420.681 448.382 420.699 448.356C420.725 448.321 420.747 448.285 420.778 448.254C420.803 448.229 420.835 448.21 420.863 448.188C420.896 448.162 420.924 448.134 420.959 448.113H420.96L431.469 442.064C431.602 441.987 431.752 441.946 431.906 441.946C432.059 441.946 432.21 441.987 432.343 442.064L442.85 448.113C442.887 448.135 442.916 448.162 442.949 448.187C442.976 448.209 443.008 448.229 443.033 448.253C443.063 448.285 443.085 448.321 443.111 448.356C443.131 448.382 443.155 448.405 443.171 448.433C443.196 448.476 443.21 448.523 443.227 448.569C443.237 448.594 443.251 448.617 443.258 448.643V448.643ZM441.537 460.362V450.386L437.86 452.503L432.781 455.427V465.403L441.538 460.362H441.537ZM431.03 478.407V468.425L426.034 471.279L411.765 479.422V489.498L431.03 478.407ZM390.752 444.439V478.407L410.014 489.497V479.423L399.951 473.728L399.948 473.725L399.943 473.723C399.909 473.704 399.881 473.675 399.849 473.651C399.822 473.629 399.79 473.612 399.766 473.588L399.764 473.584C399.735 473.557 399.716 473.523 399.692 473.493C399.67 473.463 399.644 473.438 399.626 473.407L399.625 473.404C399.605 473.371 399.593 473.332 399.579 473.295C399.565 473.262 399.546 473.231 399.538 473.196V473.195C399.527 473.154 399.524 473.11 399.52 473.067C399.516 473.035 399.507 473.002 399.507 472.969V472.967V449.481L394.428 446.555L390.752 444.44V444.439ZM400.384 437.886L391.629 442.925L400.382 447.964L409.135 442.924L400.382 437.886H400.384ZM404.936 469.335L410.015 466.411V444.439L406.338 446.556L401.259 449.481V471.452L404.936 469.335ZM431.906 443.833L423.153 448.872L431.906 453.911L440.658 448.871L431.906 443.833V443.833ZM431.03 455.427L425.95 452.503L422.274 450.386V460.362L427.352 463.285L431.03 465.403V455.427ZM410.889 477.908L423.728 470.578L430.146 466.915L421.399 461.879L411.328 467.677L402.15 472.961L410.889 477.908V477.908Z" fill="#FF2D20"/>
+                                </g>
+                                <g clip-path="url(#clip3)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M467.578 450.123V475.32H476.694V479.667H462.724V450.123H467.578V450.123ZM493.829 462.658V459.999H498.43V479.668H493.83V477.008C493.21 477.993 492.332 478.767 491.192 479.329C490.053 479.892 488.906 480.173 487.752 480.173C486.26 480.173 484.895 479.9 483.658 479.351C482.451 478.825 481.366 478.056 480.471 477.092C479.583 476.134 478.882 475.018 478.404 473.801C477.906 472.538 477.655 471.191 477.664 469.833C477.664 468.455 477.91 467.139 478.403 465.886C478.878 464.661 479.579 463.537 480.471 462.573C481.367 461.61 482.452 460.841 483.658 460.315C484.895 459.766 486.26 459.493 487.752 459.493C488.906 459.493 490.053 459.774 491.192 460.337C492.331 460.9 493.21 461.673 493.83 462.658H493.829ZM493.407 472.239C493.69 471.469 493.834 470.654 493.83 469.834C493.83 468.989 493.688 468.187 493.407 467.428C493.143 466.698 492.743 466.024 492.226 465.444C491.711 464.875 491.086 464.415 490.389 464.093C489.672 463.756 488.877 463.586 488.006 463.586C487.132 463.586 486.344 463.756 485.641 464.093C484.953 464.419 484.336 464.878 483.826 465.444C483.311 466.021 482.917 466.696 482.667 467.427C482.397 468.2 482.261 469.014 482.265 469.833C482.265 470.677 482.398 471.479 482.666 472.238C482.933 472.999 483.32 473.659 483.827 474.222C484.337 474.788 484.954 475.247 485.642 475.574C486.344 475.912 487.132 476.08 488.005 476.08C488.877 476.08 489.672 475.912 490.389 475.574C491.086 475.251 491.711 474.792 492.226 474.222C492.742 473.643 493.143 472.969 493.407 472.239V472.239ZM502.06 479.667V459.999H514.553V464.527H506.659V479.669H502.06V479.667ZM531.224 462.658V459.999H535.825V479.668H531.224V477.008C530.606 477.993 529.727 478.767 528.586 479.329C527.447 479.892 526.301 480.173 525.147 480.173C523.655 480.173 522.291 479.9 521.053 479.351C519.847 478.825 518.762 478.056 517.866 477.092C516.978 476.134 516.277 475.018 515.799 473.801C515.301 472.538 515.05 471.191 515.059 469.833C515.059 468.455 515.305 467.139 515.799 465.886C516.273 464.661 516.974 463.538 517.865 462.573C518.761 461.609 519.847 460.841 521.053 460.315C522.291 459.766 523.655 459.493 525.147 459.493C526.3 459.493 527.447 459.774 528.586 460.337C529.727 460.9 530.606 461.673 531.224 462.658V462.658ZM530.802 472.239C531.085 471.469 531.228 470.654 531.224 469.834C531.224 468.989 531.082 468.187 530.802 467.428C530.539 466.698 530.138 466.024 529.622 465.444C529.106 464.875 528.482 464.415 527.785 464.093C527.068 463.756 526.272 463.586 525.4 463.586C524.528 463.586 523.739 463.756 523.036 464.093C522.348 464.419 521.732 464.878 521.222 465.444C520.706 466.021 520.312 466.695 520.061 467.427C519.791 468.2 519.656 469.014 519.66 469.833C519.66 470.677 519.793 471.479 520.061 472.238C520.328 472.999 520.715 473.659 521.222 474.222C521.731 474.788 522.348 475.247 523.036 475.574C523.739 475.912 524.528 476.08 525.4 476.08C526.272 476.08 527.068 475.912 527.785 475.574C528.482 475.251 529.106 474.792 529.622 474.222C530.138 473.643 530.539 472.969 530.802 472.239V472.239ZM554.269 459.999H558.929L551.379 479.668H545.595L538.045 459.999H542.704L548.487 475.061L554.269 459.999ZM568.963 459.493C575.227 459.493 579.499 465.045 578.696 471.543H563.434C563.434 473.239 565.147 476.52 569.216 476.52C572.714 476.52 575.06 473.442 575.061 473.44L578.169 475.845C575.39 478.811 573.115 480.175 569.551 480.175C563.185 480.175 558.87 476.147 558.87 469.834C558.87 464.123 563.329 459.493 568.962 459.493H568.963ZM563.446 468.124H574.471C574.438 467.745 573.839 463.147 568.926 463.147C564.011 463.147 563.481 467.745 563.446 468.124ZM581.692 479.667V450.123H586.293V479.667H581.692Z" fill="#FF2D20"/>
+                                </g>
+                            </g>
+
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0" transform="scale(0.00095057)"/>
+                                </pattern>
+                                <clipPath id="clip0">
+                                    <rect width="114" height="79" fill="white" transform="translate(238 641)"/>
+                                </clipPath>
+                                <clipPath id="clip1">
+                                    <rect width="50" height="70" fill="white" transform="translate(709 103)"/>
+                                </clipPath>
+                                <clipPath id="clip2">
+                                    <rect width="54.6669" height="56.8536" fill="white" transform="translate(389 436)"/>
+                                </clipPath>
+                                <clipPath id="clip3">
+                                    <rect width="124.641" height="31.7068" fill="white" transform="translate(462.359 449.12)"/>
+                                </clipPath>
+                                <image id="image0" width="1052" height="1052" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBwAAAQcCAMAAAABRXg3AAAC1lBMVEXw208yMzDz43j8+eOhlUK+r0bv2k7u2U7s104zNDA6OjE0NTDt2E43NzDt2U41NjDn003ey0xMSjTo1E3q1k40NDB+djzVw0o2NjBDQjLk0E03ODDgzUzr107Uwkrq1U48PDHp1U1mYTjjz0zTwUo7OzGAeDxGRTPYxkvdyktdWTfEtEfPvkk9PDFSTzV7dDxeWjfm0k27rEbiz0xAQDKYjUBGRDNLSTRAPzLYxUvGtkjfzEw4ODE5OTFOTDTl0U3cyUujl0JBQDJNSzSJgD5KSDQ9PTF9dTzax0uMgz5PTDTKuUi5qkanm0N6cjs+PjKDej2xo0RgXDd5cjtXUzY/PjLLuknXxUrRv0pJSDOPhj+ypEXk0U1PTTTMu0lEQzO3qEWKgT5oYziGfj1VUTVYVDakl0KPhT9aVzbbyEuDez1YVTaVikBxazqpnUPQv0mEfD2+rkZiXTfKuki1pkWsn0PAsEdpYziWi0CekkFQTjRjXzirnkPOvUm6q0bSwEquoUThzkxbVzZ4cDtgWzdHRjNCQTKvoUSHfj2mmkNsZjnBsUefk0GzpUWpnEPFtUimmUKkmEJrZTmUiUBcWDa4qUW9rka8rUaaj0GilkKRhz+Qhj+Vi0CBeT1RTjVvaTqNhD7hzUyMgj6ek0F3cDtsZzlVUjXWxEqOhD9TUDXHtkjMvEluaDl8dDxzbDqXjEB1bjpUUTWGfT1aVjZWUzWTiT9qZTm0pkWwo0SglEHSwUqSiD+bkEGvokTZx0tZVTabj0GShz9lYDhwajq4qkZFRDPbyUt0bTpfWzeqnUOckUG1p0WFfD1JRzNkXziLgj6om0PJuEh/dzy/sEd1bjvDs0dIRjOsn0SypESIfz6toETNvEl4cTudkUFybDq2qEV7cztjXjhvaTnIuEhyazp2bzttZznCskelmUKCej3Ht0hpZDnBskdnYjhhXTeZjkD9+ur///8nV2MOAAAlAUlEQVR4XuzAgQAAAAACoP1tN1hghEoPgLFTxyYMQgEABQNJkVYIuoC4ioiQxtIldIY0SS3YpNEB3OGPYKm1lVukDjhAIHfdW+CdDgCcvwrAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAcwAwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAzAHAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAcwAwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAzAHAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAzAHAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAzAHAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAMAfAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAMAfAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB+CIOQC/OAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAMAfAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAMAfAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBMAcAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAMAfAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBwBwAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEwB8AcAHMAzAEwB8AcAHMAzAEwB8AcAHMAMAfAHABzAMwBMAfAHABzAMwBMAfAHABzAMwBwBwAcwDMATAHwBwAcwDMATAHwBwAcwDMATAHwBwAzAEw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"/>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="other-jobs" class="section">
+        <div class="container d-flex flex-column align-items-center">
+            <h3 class="h3">Наши другие работы</h3>
+            <div class="row other-jobs__row">
+                <div class="col-12 col-md-6 other-jobs__padding">
+                    <div class="other-jobs__container other-jobs__container-vput">
+                        <div class="other-jobs__container-img other-jobs__container-vput-img">
+                            <a class="d-flex justify-content-center" data-tilt href="#">
+                                <img src="img/vput-main-img.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="other-jobs__container-text">
+                            <span>V.P.U.T.</span>
+                            <p>While you progress through the questions on our personalised price calculator, we keep updating the price for your booking. At the end of the process we give you a fixed price for your relocation. While you progress through the questions on our personalised price calculator, we keep updating the price.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 other-jobs__padding">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 other-jobs__padding">
+                            <div class="other-jobs__container other-jobs__container-stooler">
+                                <div class="other-jobs__container-img other-jobs__container-stooler-img">
+                                    <a class="w-100" href="#">
+                                        <img src="img/stooler-main-img.png" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="other-jobs__container-text">
+                                    <span>Stooller</span>
+                                    <p>While you progress through the questions on our personalised price calculator, we keep updating the price for your booking. At the end of the process we give you a fixed price for your relocation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 other-jobs__padding">
+                            <div class="other-jobs__container other-jobs__container-ansy">
+                                <div class="other-jobs__container-img other-jobs__container-ansy-img">
+                                    <a class="w-100 d-flex justify-content-center" data-tilt href="#">
+                                        <img src="img/ansy-main-img.png" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="other-jobs__container-text">
+                                    <span>Ansy Gallery</span>
+                                    <p>Ansy Carpet Company – крупнейший магазин элитных ковров в Москве, созданный в 1992 году искусствоведами антикварного бутика и декораторами столичной дизайн-студии.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn official-btn-blue mt-5">Все портфолио</a>
+            </div>
+        </div>
+    </section>
+    <section id="write-ToUs" class="section flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center">
+            <h4 class="text-center">Хотите подобный проект?</h4>
+            <div class="row write-ToUs__row">
+                <div class="col-12 mb-5 mb-md-0 col-md-6">
+                    <div class="write-ToUs__block-contact">
+                        <span class="write-ToUs__title">Контакты для связи</span>
+                        <ul class="write-ToUs__list">
+                            <li>
+                                <span>Phone:</span>
+                                <div class="flex-column d-flex">
+                                    <a href="tel:+37369377248" class="write-ToUs__list-text">+373 (69) 377 248 &emsp;Moldova</a>
+                                    <a href="tel:+37377785704" class="write-ToUs__list-text">+373 (77) 785 704 &emsp;Moldova</a>
+                                    <a href="tel:+74957893648" class="write-ToUs__list-text">+749 (69) 377 248 &emsp;Moldova</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>Email:</span>
+                                <div class="flex-column d-flex">
+                                    <a href="mailto:info@webdelo.org" class="write-ToUs__list-text">info@webdelo.org</a>
+                                    <a href="mailto:a.popov@webdelo.org" class="write-ToUs__list-text">a.popov@webdelo.org</a>
+                                    <a href="mailto:seo@webdelo.org" class="write-ToUs__list-text">seo@webdelo.org</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>Skype:</span> <p class="write-ToUs__list-text">webdelo.org</p>
+                            </li>
+
+                            <li>
+                                <span>Address:</span> <p class="write-ToUs__list-text">Moldova, Bender, 28 Suvorov st. Business Center "Sheriff", office 38</p>
+                            </li>
+                        </ul>
+
+                        <span class="write-ToUs__title justify-content-start">Следите за нами</span>
+                        <div class="write-ToUs__block-social">
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-linkedin"></a>
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-github"></a>
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-facebook"></a>
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-5 mb-md-0 col-md-6">
+                    <div class="write-ToUs__block-form">
+                        <span class="write-ToUs__title">Напишите прямо сейчас</span>
+                        <p class="d-flex justify-content-center justify-content-md-start">И мы найдем для вас лучшее решение</p>
+                        <form class="write-ToUs__form" action="">
+                            <input class="write-ToUs__form-control write-ToUs__form-control-name" type="text" placeholder="Ваше имя">
+                            <input class="write-ToUs__form-control write-ToUs__form-control-phone" type="text" placeholder="Ваш телефон">
+                            <textarea class="write-ToUs__form-control write-ToUs__form-control-comment" rows="1" placeholder="Текст сообщения"></textarea>
+
+                            <button type="submit" class="btn yellow-btn-form write-ToUs__block-form-btn">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn write-ToUs__btn-bottom official-btn-blue">ЗАПОЛНИТЬ БРИФ</a>
+    </section>
+</main>
+
+<section class="section menu-modal" id="menu-modal">
+    <div class="menu-modal-wrapper">
+        <div class="container">
+            <div class="row menu-modal__header">
+                <div class="col-8 col-md-5">
+                    <div class="logo-container">
+                        <a class="logo-main logo-main_mr" href="https://webdelo.org/"></a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-7">
+                    <span id="main-menu-close" class="main-menu-close"><span>Закрыть</span><i></i></span>
+                </div>
+            </div>
+
+            <div class="row position-static">
+                <div class="col-md-6">
+                    <div class="menu-modal__block">
+                        <ul class="menu-modal__list">
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">Главная</a>
+                            </li>
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">Проекты</a>
+                            </li>
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">О нас</a>
+                            </li>
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">Связаться с нами</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 position-static__list">
+                    <div class="position-static__list-wrapper">
+                        <span class="position-static__list-title">Другие продукты</span>
+                        <div class="menu-modal__products owl-carousel">
+                            <a class="menu-modal__product" href="#">
+                                <div class="menu-modal__product-img">
+                                    <img src="img/vput-mobil-img.jpg" alt="">
+                                </div>
+                                <span class="menu-modal__product-title">V.P.U.T.</span>
+                                <p class="menu-modal__product-text">While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
+                            </a>
+                            <a class="menu-modal__product" href="#">
+                                <div class="menu-modal__product-img">
+                                    <img src="img/stooler-mobil-img.jpg" alt="">
+                                </div>
+                                <span class="menu-modal__product-title">Stooller</span>
+                                <p class="menu-modal__product-text">While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
+                            </a>
+                            <a class="menu-modal__product" href="#">
+                                <div class="menu-modal__product-img">
+                                    <img src="img/ansy-gallery-img.jpg" alt="">
+                                </div>
+                                <span class="menu-modal__product-title">Ansy Gallery</span>
+                                <p class="menu-modal__product-text">While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+
+<script src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>-->
+
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+
+    new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       100,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    ).init();
+
+    $('.gallery a').simpleLightbox();
+    $('.gallery-1 a').simpleLightbox();
+
+
+    $('.owl-carousel').owlCarousel({
+        margin:27,
+        loop:false,
+        autoWidth:true,
+        items:3
+    })
+
+</script>
+
+</body>
+</html>
