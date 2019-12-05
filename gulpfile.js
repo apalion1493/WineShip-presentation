@@ -107,6 +107,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     var buildLibs = gulp.src('app/libs/**/*') // Переносим библиотеки в продакшен
         .pipe(gulp.dest('dist/libs'))
 
+    var buildMedia = gulp.src('app/media/**/*') // Переносим медиа-файлы в продакшен
+        .pipe(gulp.dest('dist/media'))
+
     var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
         .pipe(gulp.dest('dist/js'))
 
