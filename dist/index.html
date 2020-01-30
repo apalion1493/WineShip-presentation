@@ -46,8 +46,8 @@
                         <p class="section-first__content-text mt-5 wow fadeInLeft" data-wow-delay="0.2s">Стильный и удобный функционал каталога</p>
                         <p class="section-first__content-text wow fadeInLeft" data-wow-delay="0.2s">60 000 наименований вин и алкоголя</p>
 
-                        <div class="section-first__content-btnGroup wow fadeInLeft" data-wow-delay="0.4s">
-                            <a href="#" class="btn btn-orange mr-0 mr-md-5">Подробнее о проекте</a>
+                        <div id="section-first__content-btnGroup" class="section-first__content-btnGroup wow fadeInLeft" data-wow-delay="0.4s">
+                            <a href="#section-second" class="btn btn-orange mr-0 mr-md-5">Подробнее о проекте</a>
 
                             <a class="section-link" href="#">Сайт в архиве</a>
                         </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="wine-img-mobil"></div>
     </section>
-    <section class="section section-second">
+    <section id="section-second" class="section section-second">
         <div class="section-second-bg-1 section-second-bg wow fadeInLeft" data-wow-delay="0.3s"></div>
         <div class="section-second-bg-2 section-second-bg wow fadeInLeft" data-wow-delay="0.6s"></div>
         <div class="section-second-bg-3 section-second-bg wow fadeInLeft" data-wow-delay="0.9s"></div>
@@ -151,6 +151,12 @@
                                 <div class="section-third__block">
                                     <i class="red-arrow red-arrow_mr"></i>
                                     <p class="main-text"> Одна и та же бутылка разного объема</p>
+                                </div>
+                            </li>
+                            <li class="section-third__item">
+                                <div class="section-third__block">
+                                    <i class="red-arrow red-arrow_mr"></i>
+                                    <p class="main-text">Бутылка каждого винтажа и объема является отдельным товаром с разной ценой и статусом наличия</p>
                                 </div>
                             </li>
                         </ul>
@@ -776,9 +782,16 @@
         loop:false,
         autoWidth:true,
         items:3
-    })
+    });
 
-
+    $(document).ready(function(){
+        $(".section-first__content-btnGroup").on("click","a", function (event) {
+            event.preventDefault();
+            let id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 500);
+        });
+    });
 
 </script>
 
