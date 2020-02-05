@@ -32,9 +32,9 @@
 
 .section-first__content-text {
   font-weight: bold;
-  font-size: 32px;
-  line-height: 37px;
-  color: #FF6C4D;
+  font-size: 24px;
+  line-height: 28px;
+  color: #777777;
 }
 
 .wine-img-mobil {
@@ -48,6 +48,17 @@
   right: 0;
   z-index: -1;
   display: none;
+}
+
+.section-first__list {
+  list-style-type: none;
+  padding-left: 40px;
+  margin-top: 45px;
+  max-width: 490px;
+
+  li {
+    display: flex;
+  }
 }
 
 
